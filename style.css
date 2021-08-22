@@ -1,0 +1,125 @@
+@font-face {
+     font-family: 'VT323';
+     font-style: normal;
+     font-weight: 700;
+     src: local('VT323-Regular'), local('VT323-Regular'), url(VT323-Regular.ttf) format('truetype');
+}
+body {
+     background-color: black;
+     overflow: hidden;
+ }
+ h2{
+     color: rgb(152, 207, 113);
+     text-align: center;
+     
+ }
+ div#board {
+     position: relative;
+     width: 900px;
+     height: 900px;
+     margin-left: 830px;
+     background: url("images/board.jpg") no-repeat;
+ }
+
+ div#notify {
+     position: absolute;
+     top: 0px;
+     font-size: 30px;
+     left: 0px;
+     color: rgb(83, 175, 19);
+ }
+ #fireButton {
+      margin-left: 20px;
+ }
+ .counterDesign {
+      margin-left: 140px;
+      color: rgb(83, 175, 19);
+      font-size: 40px;
+      font-family: 'VT323';
+
+ }
+ #counterSuppos {
+      margin-left: 20px;
+      color: rgb(83, 175, 19);
+      font-family: 'VT323';
+      font-size: 40px;
+
+ }
+ #counterbate {
+      margin-left: 20px;
+       font-family: 'VT323';
+       color: rgb(83, 175, 19);
+      font-size: 40px;
+
+ }
+ .hit {
+     background: url("images/ship.png") no-repeat center center;
+ }
+ .miss {
+     background: url("images/miss.png") no-repeat center center;
+ }
+ table {
+      margin-top: 186px;
+      margin-right: 240px;
+     border-spacing: 0px;
+ }
+ td {
+     width: 94px;
+     height: 94px;
+ }
+ form {
+     /* position: absolute; */
+     bottom: 0px;
+     right: 0px; 
+     z-index: 3333333333333 !important;
+     text-align: center;
+     padding: 15px;
+     background-color: #084472;
+ }
+ form input {
+     background-color: #0e578f;
+     border-color: white;
+     font-size: 22px;
+    color: #fff;
+    z-index: 33234;
+     font-weight: bold;
+     border-radius: 20px;
+     padding: 10px;
+
+ }
+ form input::placeholder {
+     color: #fff;
+     opacity: 0.7;
+ }
+ .slow {
+     display: inline-block;
+     vertical-align: middle;
+     overflow: hidden;
+     animation: slow 16s ease-out forwards;
+   }
+   
+   @keyframes slow {
+     from {
+       max-width: 0.5rem;
+     }
+     to {
+       max-width: 130rem;
+     }
+   }
+
+
+   .split {
+     position: fixed;
+     top: 0;
+   }
+   
+   .left {
+     top: 60px;
+     left: 0;
+   }
+   
+   .right {
+     right: 0;
+   }
+   
+   
